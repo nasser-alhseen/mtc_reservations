@@ -7,7 +7,7 @@ if (typeof localStorage === "undefined" || localStorage === null) {
 }
 const scrapper = async () => {
   const browser = await puppeteer.launch({
-    headless: false, args: [
+    headless: true, args: [
       "--disable-setuid-sandbox",
       "--no-sandbox",
       "--single-process",
